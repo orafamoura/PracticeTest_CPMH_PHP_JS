@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal</title>
+  <!-- Referencia para o meu JS-->
+  <script src="/public/templates/js/scriptIndex.js"></script>
+
+  <!-- Referencia para o meu CSS-->
+  <link rel="stylesheet" href="/public/templates/css/stylesIndex.css">
+</head>
+
+<body>
+  <div id="globalContainer" class="globalContainer">
+    <header class="headerContainer">  
+      <h1>Sistema de Pacientes</h1>
+      <div class="layoutButtons">
+        <a href="/public/formulario.html" class="openFormButton">Adicionar Paciente</a>
+      </div>
+      <main>
+        <div class="mainContainer">
+          <h2 style="display: flex; margin-bottom: 1px;">Pacientes Cadastrados</h2>
+          <div class="searchContainer">
+            <div class="actions">
+              <input type="text" class="searchInput" id="searchInput" placeholder="Buscar por nome">
+              <button class="searchButton" id="searchButton">Buscar</button>
+              <div class="mensagemErroLayer" id="nameNotFoundError"></div> 
+            </div>
+          </div>
+          <div id="pacientesContainer">
+            <table id="patientsTable">
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Data de Nascimento</th>
+                  <th>Gênero</th>
+                  <th>Telefone</th>
+                  <th>Endereço</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dados dos pacientes serão inseridos dinamicamente aqui -->
+              </tbody>
+            </table>
+          </div>
+          <div id="paginacaoContainer" class="paginacaoContainer">
+            <!-- Controles de paginação serão inseridos dinamicamente aqui -->
+          </div>
+      </div>
+      </main>
+    </header>
+  </div>
+</body>
+</html>

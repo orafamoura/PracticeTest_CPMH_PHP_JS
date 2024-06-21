@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+fieldset {
+  background-color: #E0E0E0;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: #539DA6;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+header {
+  display: flex;
+  height: 100px;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.divForms {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.inputbox {
+  margin-top: 20px;
+  position: relative;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+}
+
+select {
+  border-radius: 5px;
+  border: none;
+}
+
+.mensagemErroLayer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  color: red;
+  font-size: 12px;
+  
+}

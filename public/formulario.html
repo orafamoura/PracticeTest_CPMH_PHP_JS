@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>formulario</title>
+
+  <!-- Referencia para o meu JS-->
+  <script src="/public/templates/js/scriptFormulario.js"></script>
+
+  <!-- Referencia para o meu CSS-->
+  <link rel="stylesheet" href="/public/templates/css/styleForms.css">
+
+</head>
+<body>
+  <header>
+    <legend>Dados Pessoais</legend>
+  </header>
+  <div class="divForms">
+    <div id="globalContainer" class="globalContainer">
+      <form method="POST" action="../src/util/controle_formulario.php" onsubmit="return validarFormulario()">        <fieldset>
+          <div class="form-group">
+            <div class="inputbox">
+              <label class="labelForms" for="name">Nome:</label>
+              <br>
+              <input type="text" name="name" id="name" placeholder="Nome" >
+              <div class="mensagemErroLayer" id="name-error"></div>
+            </div>
+            <br>
+            <div class="inputbox">
+              <label class="labelForms" for="birthdate">Data de nascimento:</label>
+              <br>
+              <input type="date" name="birthdate" id="birthdate" placeholder="Data de Nascimento" >
+              <div class="mensagemErroLayer" id="birthdate-error"></div>
+            </div>
+            <br>
+            <div class="inputbox">
+              <label class="labelForms" for="gender">Selecione seu sexo:</label>
+              <br>
+              <select class="genderClass" name="gender" id="gender" >
+                <option value="" disabled selected hidden> Escolha uma das opcões</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+              </select>
+              <div class="mensagemErroLayer" id="gender-error"></div>
+            </div>
+            <br>
+            <div class="inputbox">
+              <label class="labelForms" for="telephone">Telefone:</label>
+              <br>
+              <input type="text" name="telephone" id="telephone" placeholder="(xx) x xxxx-xxxx" minlength="16" maxlength="16">
+              <div class="mensagemErroLayer" id="telephone-error"></div>
+            </div>
+            <br>
+            <div class="inputbox">
+              <label class="labelForms" for="address">Endereço:</label>
+              <br>
+              <input type="text" name="address" id="address" placeholder="Endereco" >
+              <div class="mensagemErroLayer" id="address-error"></div>
+            </div>
+          </div>
+          <br>
+          <button>Cadastrar</button>
+        </fieldset>
+      </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+</html>

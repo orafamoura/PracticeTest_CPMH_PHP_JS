@@ -1,0 +1,176 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+header {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  background-color: #7EB9BF;
+  color: white;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 60px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+main {
+  background-color: #E0E0E0;
+  border-radius: 10px;
+}
+
+thead {
+  background-color: #7EB9BF;
+  color: white;
+}
+
+thead th {
+  padding: 10px;
+  position: relative;
+  height: 5px;
+}
+
+thead th:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+thead th:last-child {
+  border-top-right-radius: 20px; /* Borda arredondada no canto superior direito do último cabeçalho */
+  border-bottom-right-radius: 20px; /* Borda arredondada no canto inferior direito do último cabeçalho */
+}
+
+tbody td {
+  background-color: white;
+  border-radius: 10px;
+  border: 2px #E0E0E0 solid;
+  border-bottom: 2px #E0E0E0 solid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  font-size: small;
+}
+
+th, td {
+  padding: 7px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
+
+.layoutButtons {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+a.openFormButton {
+  padding: 10px 20px;
+  background-color: #539DA6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+a.openFormButton:hover {
+  background-color: #539DA6;
+}
+
+button.searchButton {
+  padding: 10px 20px;
+  background-color: #539DA6;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  font-size: medium;
+}
+
+button.searchButton:hover {
+  background-color: #539DA6;
+  cursor: pointer;
+} 
+
+.mensagemErroLayer {
+  color: red;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.searchInput {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.mainContainer {
+  margin: 30px 30px;
+}
+
+.searchContainer {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: flex-end;
+}
+
+#pacientesContainer {
+  margin-bottom: 20px;
+}
+
+#paginacaoContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#paginacaoContainer a {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #539DA6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+#paginacaoContainer a:hover {
+  background-color: #539DA6;
+}
+
+@media only screen and (max-device-width: 900px) {
+   .headerContainer { width:100%; }
+  }
